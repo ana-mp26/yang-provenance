@@ -139,10 +139,10 @@ Provenance signature strings are COSE single signature messages with \[nil\] pay
 
 ~~~
 COSE_Sign1 = [
-protected /algorithm-identifier, kid, serialization-method/
-unprotected /algorithm-parameters/
-signature /using as external data the content of the YANG
-           (meta-)data without the signature leaf/
+protected /algorithm-identifier, kid, serialization-method/,
+unprotected /algorithm-parameters/,
+payload /nil/,
+signature /using as external data the content of the YANG (meta-)data without the signature leaf/
 ]
 ~~~
 
