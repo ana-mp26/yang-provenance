@@ -444,8 +444,9 @@ module ietf-yp-provenance {
                <mailto:antonio.pastorperales@telefonica.com>";
 
   description
-    "Defines a binary provenance-signature type to be used in other YANG
-    modules.
+    "Augments the YANG-Push notification envelope with a provenance
+     signature leaf for integrity and origin verification, and extends
+     notification capabilities to advertise provenance support.
 
     Copyright (c) 2026 IETF Trust and the persons identified as
     authors of the code.  All rights reserved.
@@ -652,8 +653,8 @@ module ietf-yang-provenance-annotation {
               Henk Birkholz
               <mailto:henk.birkholz@sit.fraunhofer.de>";
     description
-      "Defines a binary provenance-signature type to be used in YANG
-      metadata annotations
+      "Defines a YANG metadata annotation for carrying provenance
+       signatures on arbitrary YANG data elements.
 
       Copyright (c) 2026 IETF Trust and the persons identified as
       authors of the code.  All rights reserved.
